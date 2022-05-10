@@ -1,5 +1,1 @@
-document.addEventListener('DOMContentLoaded', function() {
-
-	// $('body').hide()
-
-})
+document.addEventListener("DOMContentLoaded", function () {});
