@@ -135,6 +135,16 @@ body, html {
 	transition: opacity 1.8s var(--transition), transform 1.8s var(--transition);
 }
 
+.showcase-carousel__item::after {
+	content: "";
+	position: absolute;
+	bottom: 5px;
+	left: calc(50% - 60px);
+	width: 120px;
+	height: 0;
+	box-shadow: 0 0 45px 10px #010101;
+}
+
 .showcase-carousel__item.swiper-slide-active {
 	opacity: 0.9;
 	transform: scale(0.95);
