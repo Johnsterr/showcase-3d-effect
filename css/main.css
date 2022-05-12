@@ -145,6 +145,16 @@ body, html {
 	box-shadow: 0 0 45px 10px #010101;
 }
 
+.showcase-carousel__item p {
+	position: absolute;
+	bottom: -80px;
+	width: 100%;
+	font-family: assassin-st, sans-serif;
+	font-size: 32px;
+	color: rgba(255, 255, 255, 0.6);
+	text-shadow: rgb(58, 78, 94) 0 0 10px;
+}
+
 .showcase-carousel__item.swiper-slide-active {
 	opacity: 0.9;
 	transform: scale(0.95);
