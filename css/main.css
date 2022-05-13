@@ -197,6 +197,55 @@ body, html {
 	animation-direction: alternate;
 }
 
+/* NAVIGATION */
+.showcase-navigation {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	z-index: 2;
+}
+
+.showcase-navigation > * {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	outline: none;
+	cursor: pointer;
+}
+
+.showcase-navigation__next {
+	right: 0;
+}
+
+.showcase-navigation > *::before {
+	content: '?';
+	position: absolute;
+	top: 50%;
+	left: 50px;
+	font-family: assassin-st, sans-serif;
+	font-size: 45px;
+	opacity: 0;
+	transform: rotate(-90deg);
+	transition: opacity 0.75s ease-out;
+}
+
+.showcase-navigation > *:hover::before {
+	opacity: 0.6;
+}
+
+.showcase-navigation__next::before {
+	transform: rotate(90deg);
+	right: 50px;
+	left: auto;
+}
+
+.showcase-navigation > *.swiper-button-disabled {
+	display: none;
+}
+
 /* ANIMATIONS */
 @keyframes k-light {
 	0% {
